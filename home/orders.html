@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/stylehome.css" />
+    <link rel="stylesheet" href="css/CheckOut.css" />
+    <style>
+        @import url('../Admin/Style/style.css');
+    </style>
+</head>
+
+<body>
+    <nav style="background-color:#5b0005">
+        <div class="nav-bar" style="background-color:#5b0005">
+            <i class="bx bx-menu sidebarOpen"></i>
+            <span class="logo navLogo"><a href="#"
+                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> S Shopping</a></span>
+
+            <div class="menu" style="background-color:#5b0005">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#"
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> S Shopping</a></span>
+                    <i class="bx bx-x siderbarClose"></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html"
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HOME</a></li>
+                    <li><a href="About.html"
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ABOUT</a></li>
+                    <!-- <li><a href="#">SHOP</a></li> -->
+                    <li><a href="CheckOut.html"
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">CHECKOUT</a></li>
+                    <li><a href="Contact.html"
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">CONTACT</a></li>
+                    <li><a href="orders.html"
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">orders</a></li>
+                    <!-- <li>
+                <a href="Log_Reg.html">LOGIN</a>
+              </li> -->
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light" id="cartt">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-num" id="_cart-num">0</span>
+                </div>
+                <div class="dark-light" id="wishh">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="cart-num" id="_wish-num">0</span>
+                </div>
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class="bx bx-x cancel"></i>
+                        <i class="bx bx-search search"></i>
+                    </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search..." />
+                        <i class="bx bx-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="margin-top: 70px;" class="recent-grid2">
+
+        <div class="products">
+            <div class="card">
+                <div class="card-header">
+                    <h3>orders</h3>
+                    <!-- <button>See all <span class="las la-arrow-right"></span></button> -->
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <td>Customer</td>
+                                    <td>product</td>
+                                    <td>Price</td>
+                                    <td>status</td>
+
+                                    <!-- <td >
+                                        sd
+                                        <span style="font-size:x-large; color: red;" class="la la-close"></span>
+                                    </td> -->
+                                    <!-- <td>               
+                                         <input id="name"  type="text" placeholder="Product Name" value="sama">
+                                    </td> -->
+
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                <!-- <td>
+                                    <span class="status_orange"></span>
+                                    in progress..
+                                </td> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/orders.js"></script>
+</body>
+
+</html>

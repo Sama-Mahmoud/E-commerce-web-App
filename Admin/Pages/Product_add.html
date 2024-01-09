@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="../Source/S_icon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <style>
+        @import url('../Style/style.css');
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="slidebar">
+        <div class="slidebar-brand">
+            <h2>
+                <span class="lab la-accusoft">
+                    <span>S.S.S
+                    </span>
+                </span>
+            </h2>
+        </div>
+
+        <div class="slidebar-menu">
+            <ul>
+                <li>
+                    <a href="Admin-Page.html">
+                        <span class="las la-igloo">
+                        </span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="crud_category.html">
+                        <span class="las la-user-circle">
+                        </span>
+                        <span>categorys</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="active">
+                        <span class="las la-plus">
+                        </span>
+                        <span>Add product</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="View_Products.html">
+                        <span class="las la-street-view">
+                        </span>
+                        <span>View products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <span class="las la-shopping-bag">
+                        </span>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Payment.html">
+                        <span class="las la-money-bill">
+                        </span>
+                        <span>payment</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2 class="header-title">
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                Add Product
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search here">
+            </div>
+
+            <div class="user-wrapper">
+                <img src="../Source/user img2.jpg" alt="" width="50px" height="50px">
+                <div>
+                    <h4>Sama Mahmoud</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+           <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1 id="customernum">54</h1>
+                        <span>Customers</span>
+                    </div>
+                    <div>
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1 id="products_count">79</h1>
+                        <span>Products</span>
+                    </div>
+                    <div>
+                        <span class="las la-shopping-basket"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1 id="ordernum">40</h1>
+                        <span>Orders</span>
+                    </div>
+                    <div>
+                        <span class="las la-shopping-bag"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1 id="paymentnum">$6k</h1>
+                        <span>Income</span>
+                    </div>
+                    <div>
+                        <span class="las la-money-bill"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <form >
+
+                    <input id="name" class="text-input" type="text" placeholder="Product Name" required>
+                    <br>
+                    <input id="price" class="text-input" type="number" placeholder="Product price" required>
+                    <br>
+                    <!-- <input id="category" class="text-input" type="text" placeholder="Product category" required>
+                    <br> -->
+                    <select style="margin-bottom: 20px;" class="text-input" name="category" id="cat">
+                        <!-- <option value="sama">sama</option> -->
+
+                    </select>
+                    <input id="count" class="text-input" type="number" placeholder="Product Count" required>
+                    <br>
+                    <textarea id="description" name="tarea" cols="59" rows="7" placeholder="description"
+                        required></textarea>
+                    <br>
+                    <label class="images" for="product-img">Add image :</label>
+                    <br>
+                    <input class="images" id="product-img" type="file" required>
+                    <br>
+                    <label class="images" for="product-img1">image2:</label>
+                    <br>
+                    <input class="images" id="product-img1" type="file" required>
+                    <br>
+                    <label class="images" for="product-img2">image3:</label>
+                    <br>
+                    <input class="images" id="product-img2" type="file" required>
+                    <br>
+                    <label class="images" for="product-img3">image4:</label>
+                    <br>
+                    <input class="images" id="product-img3" type="file" required>
+                    <br>
+                    <br>
+                    <button id="Addbtn" class="Addbtn" type="button"> Add </button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+
+
+            </div>
+
+        </main>
+
+
+    </div>
+    <!-- <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        // import { initializeDatabase } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        // Import the functions you need from the SDKs you need
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"
+
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCbkNWdBLE_6oz9SWlwZjEhibMqWpH6Nds",
+            authDomain: "products-2d7f6.firebaseapp.com",
+            projectId: "products-2d7f6",
+            storageBucket: "products-2d7f6.appspot.com",
+            messagingSenderId: "85074428073",
+            appId: "1:85074428073:web:9d137bbe3c720b2efde9b8"
+        };
+
+
+        var productName = document.getElementById("name");
+        var productPrice = document.getElementById("price");
+        var productCategory = document.getElementById("category");
+        var productCount = document.getElementById("count");
+        var productDescription = document.getElementById("description");
+        var addBtn = document.getElementById("Addbtn");
+
+
+        // // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        // const db = getDatabase();
+        //  const dbref = ref(db,"/product")
+
+        // addBtn.addEventListener("click", function (e) {
+        //     console.log("hhhhhhhhh")
+        //     e.preventDefault();
+        //     set(ref(db, "products/" + Date.now(), {
+        //         product_Name: productName.value == undefined ? " " : productName.value  ,
+        //         product_Price: productPrice.value == undefined ? " " : productPrice.value,
+        //         product_Category: productCategory.value == undefined ? " " : productCategory.value,
+        //         product_Count: productCount.value == undefined ? " " : productCount.value,
+        //         product_Description: productDescription.value == undefined ? " " : productDescription.value
+        //     }
+        //     ))
+        // })
+        //firebase.initializeApp(firebaseConfig);
+
+        // Get a reference to the database
+        const database = getDatabase();
+
+        // Example data to be set in the database
+        addBtn.addEventListener("click", function (e) {
+            const dataToSet = {
+                product_Name: productName.value == undefined ? " " : productName.value,
+                product_Price: productPrice.value == undefined ? " " : productPrice.value,
+                product_Category: productCategory.value == undefined ? " " : productCategory.value,
+                product_Count: productCount.value == undefined ? " " : productCount.value,
+                product_Description: productDescription.value == undefined ? " " : productDescription.value
+                // ... other properties
+            };
+            const productsRef = ref(database, 'products'+Date.now());
+
+            set(productsRef, dataToSet)
+            .then(() => {
+                console.log('Data set successfully.');
+            })
+            .catch((error) => {
+                console.error('Error setting data:', error);
+            });
+
+
+        }
+
+        )
+
+    </script>   -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script> -->
+    <script src="../js/Product_add.js"></script>
+    <script src="../js/cards.js"></script>
+
+
+</body>
+
+</html>

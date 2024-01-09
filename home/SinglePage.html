@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../Admin/Source/S_icon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="stylehome.css" />
+    <!---Boxicons CDN Setup for icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/stylehome.css" />
+    <link rel="stylesheet" href="css/singlePage.css" />
+    <title>SinglePage</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="#"> S Shopping</a></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="#">S Shopping</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <!-- <li><a href="#">SHOP</a></li> -->
+            <li><a href="CheckOut.html">CHECKOUT</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="orders.html"
+              style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">orders</a></li>
+            <!-- <li>
+              <a href="Log_Reg.html">LOGIN</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+          <div class="dark-light" id="cartt">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-num" id="_cart-num">0</span>
+          </div>
+          <div class="dark-light" id="wishh">
+            <i class="fa-solid fa-heart"></i>
+            <span class="cart-num" id="_wish-num">0</span>
+          </div>
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+
+            <div class="search-field">
+              <input type="text" placeholder="Search..." />
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="single-product">
+        <div class="row">
+          <div class="col-6">
+            <div class="product-image">
+              <div class="product-image-main">
+                <img src="images/b18 (1).jpg" alt="" id="product-main-image" />
+              </div>
+              <div class="product-image-slider">
+                <img src="images/b10.jpg" alt="" class="image-list img1" />
+                <img src="images/b3.jpg" alt="" class="image-list img2" />
+                <img src="images/b5.jpg" alt="" class="image-list img3" />
+                <img src="images/b17 (2).jpg" alt="" class="image-list img4" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="breadcrumb">
+              <span><a href="#">Home</a></span>
+              <span><a href="#">Product</a></span>
+              <span class="active">T-shirt</span>
+            </div>
+
+            <div class="product">
+              <div class="product-title">
+                <h2>Half Sleve T-shirt for Men</h2>
+              </div>
+              <div class="product-rating">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span class="review">(47 Review)</span>
+              </div>
+              <div class="product-price">
+                <span class="offer-price">$99.00</span>
+                <span class="sale-price">$700.00</span>
+              </div>
+
+              <div class="product-details">
+                <h3>Description</h3>
+                <p id="desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  est magnam quibusdam maiores sit perferendis minima cupiditate
+                  iusto earum repudiandae maxime vitae nostrum, ea cumque iste
+                  ipsa hic commodi tempore.
+                </p>
+              </div>
+              <div class="product-size">
+                <h4>Size</h4>
+                <div class="size-layout">
+                  <input
+                    type="radio"
+                    name="size"
+                    value="S"
+                    id="1"
+                    class="size-input"
+                  />
+                  <label for="1" class="size">S</label>
+
+                  <input
+                    type="radio"
+                    name="size"
+                    value="M"
+                    id="2"
+                    class="size-input"
+                  />
+                  <label for="2" class="size">M</label>
+
+                  <input
+                    type="radio"
+                    name="size"
+                    value="L"
+                    id="3"
+                    class="size-input"
+                  />
+                  <label for="3" class="size">L</label>
+
+                  <input
+                    type="radio"
+                    name="size"
+                    value="XL"
+                    id="4"
+                    class="size-input"
+                  />
+                  <label for="4" class="size">XL</label>
+
+                  <input
+                    type="radio"
+                    name="size"
+                    value="XXL"
+                    id="5"
+                    class="size-input"
+                  />
+                  <label for="5" class="size">XXL</label>
+                </div>
+              </div>
+              <div class="product-color">
+                <h4>Color</h4>
+                <div class="color-layout">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="black"
+                    class="color-input"
+                  />
+                  <label for="black" class="black"></label>
+                  <input
+                    type="radio"
+                    name="color"
+                    value="red"
+                    class="color-input"
+                  />
+                  <label for="red" class="red"></label>
+
+                  <input
+                    type="radio"
+                    name="color"
+                    value="blue"
+                    class="color-input"
+                  />
+                  <label for="blue" class="blue"></label>
+                </div>
+              </div>
+              <span class="divider"></span>
+
+              <!-- <div class="product-btn-group">
+                <div class="button buy-now">
+                  <i class="bx bxs-zap"></i> Buy Now
+                </div>
+                <div class="button add-cart">
+                  <i class="bx bxs-cart"></i> Add to Cart
+                </div>
+                <div class="button heart">
+                  <i class="bx bxs-heart"></i> Add to Wishlist
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-col">
+          <h4>products</h4>
+          <ul>
+              <li><a href="#">teams</a></li>
+              <li><a href="#">advertising</a></li>
+              <li><a href="#">talent</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>network</h4>
+          <ul>
+              <li><a href="#">technology</a></li>
+              <li><a href="#">science</a></li>
+              <li><a href="#">business</a></li>
+              <li><a href="#">professional</a></li>
+              <li><a href="#">API</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+              <li><a href="About.html">about</a></li>
+              <li><a href="#">legal</a></li>
+              <li><a href="Contact.html">contact us</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="links">
+              <a href="https://www.linkedin.com/login/ar"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/?locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/?lang=ar"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/?hl=ar"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </footer>
+    <script src="js/singlePage.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
